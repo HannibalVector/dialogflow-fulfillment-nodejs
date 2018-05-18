@@ -25,6 +25,8 @@ const Card = require('./rich-responses/card-response');
 const Image = require('./rich-responses/image-response');
 const Suggestion = require('./rich-responses/suggestions-response');
 const Payload = require('./rich-responses/payload-response');
+const Raw = require('./rich-responses/raw-response');
+
 const {
   RichResponse,
   PLATFORMS,
@@ -492,4 +494,4 @@ class WebhookClient {
   }
 }
 
-module.exports = {WebhookClient, Text, Card, Image, Suggestion, Payload};
+module.exports = {WebhookClient, Text, Card, Image, Suggestion, Payload, Raw};
